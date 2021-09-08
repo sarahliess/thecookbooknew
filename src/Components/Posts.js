@@ -30,16 +30,12 @@ function Posts({ recipes }) {
         {recipes.map((recipe, index) => (
           <div className="RecipeContainer">
             <div key={index} className="RecipeTitle">
-              {recipe.fields.name}
+              {recipe.name};
             </div>
 
             <div key={index} className="RecipeImage">
-              <Link to={`/recipes/${recipe.sys.id}`}>
-                <img
-                  key={index}
-                  src={recipe.fields.image.fields.file.url}
-                  alt={recipe.fields.name}
-                />
+              <Link to={`/recipes/${recipe._id}`}>
+                <img key={index} src={recipe.image} alt={recipe.name} />
               </Link>
             </div>
           </div>

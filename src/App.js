@@ -3,6 +3,7 @@ import "./resetter.css";
 import { client } from "./client";
 import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
+import axios from "axios";
 import Posts from "./Components/Posts";
 import Navbar from "./Components/Navbar";
 import Post from "./Components/Post";
@@ -14,15 +15,16 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    client
-      .getEntries()
-      .then((response) => {
-        console.log(response.items);
-        console.log(response.items[0].fields.name);
-        setRecipes(response.items);
+    axios
+      .get("https://thecookbookmongodb.herokuapp.com/recipes")
+      .then((json) => {
+        setRecipes(json.data.data);
+        console.log("blablabla", json.data.data);
       })
-      .catch(console.log("Something went wrong"));
+      .catch((err) => console.log(err));
   }, []);
+
+  console.log("recipes console", recipes);
 
   return (
     <div className="App">

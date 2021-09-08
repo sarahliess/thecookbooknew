@@ -13,25 +13,22 @@ const Post = ({ recipes }) => {
 
   const { id } = useParams();
 
-  const recipe = recipes.find((recipe) => recipe.sys.id === id);
+  const recipe = recipes.find((recipe) => recipe._id === id);
 
   return (
     <div className="SingleRecipeContainer">
       {recipe ? (
         <div className="SingleRecipe">
           <div className="SingleRecipeTitle">
-            <h1>{recipe.fields.name}</h1>
+            <h1>{recipe.name}</h1>
           </div>
           <div className="SingleRecipeHead">
             <div className="SingleRecipeImage">
-              <img
-                src={recipe.fields.image.fields.file.url}
-                alt={recipe.fields.name}
-              />
+              <img src={recipe.image} alt={recipe.name} />
             </div>
             <div className="SingleRecipeIngredients">
               <h2>Ingredients</h2>
-              <p>{recipe.fields.ingredients}</p>
+              <p>{recipe.ingredients}</p>
             </div>
           </div>
           <div className="SingleRecipeDescription">
@@ -39,7 +36,7 @@ const Post = ({ recipes }) => {
             <br />
             <div
               dangerouslySetInnerHTML={{
-                __html: marked(recipe.fields.description),
+                __html: marked(recipe.description),
               }}
             ></div>
           </div>
