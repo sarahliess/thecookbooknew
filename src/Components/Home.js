@@ -1,3 +1,6 @@
+import AddRecipe from "./AddRecipe";
+import { Link } from "react-router-dom";
+
 function Home({ recipes }) {
   return (
     <div>
@@ -8,16 +11,17 @@ function Home({ recipes }) {
       <div className="HeaderBottom">
         <div>
           <h1 className="HomeText">
-            The ultimate cookbook with a total of {recipes.length} recipes. Look around, maybe
-            you find something that you would like to cook today. If not, we
-            won't be offended.
+            The ultimate cookbook with a total of {recipes.length} recipes. Look
+            around, maybe you find something that you would like to cook today.
+            If not, we won't be offended.
           </h1>
         </div>
       </div>
+      <AddRecipe />
       <div className="button">
-        <a href="/recipes/">
-          <button className="HomeButton">SEE RECIPES</button>
-        </a>
+        <Link to="/recipes">
+          <button className="HomeButton">SEE ALL RECIPES</button>
+        </Link>
       </div>
     </div>
   );

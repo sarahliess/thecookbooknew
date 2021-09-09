@@ -14,6 +14,20 @@ import About from "./Components/About";
 function App() {
   const [recipes, setRecipes] = useState([]);
 
+  // handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     name: name,
+  //     image: image,
+  //     ingredients: ingredients,
+  //     description: description,
+  //   };
+  //   axios
+  //     .post("https://thecookbookmongodb.herokuapp.com/recipes", data)
+  //     .then((res) => console.log(res))
+  //     .catch((err) => console.log(err));
+  // };
+
   useEffect(() => {
     axios
       .get("https://thecookbookmongodb.herokuapp.com/recipes")
