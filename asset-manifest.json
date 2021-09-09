@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/thecookbooknew/static/css/main.3ec04437.chunk.css",
-    "main.js": "/thecookbooknew/static/js/main.cc99b689.chunk.js",
-    "main.js.map": "/thecookbooknew/static/js/main.cc99b689.chunk.js.map",
+    "main.css": "/thecookbooknew/static/css/main.96cb3347.chunk.css",
+    "main.js": "/thecookbooknew/static/js/main.faf802bf.chunk.js",
+    "main.js.map": "/thecookbooknew/static/js/main.faf802bf.chunk.js.map",
     "runtime-main.js": "/thecookbooknew/static/js/runtime-main.2fc6112c.js",
     "runtime-main.js.map": "/thecookbooknew/static/js/runtime-main.2fc6112c.js.map",
-    "static/js/2.65aab926.chunk.js": "/thecookbooknew/static/js/2.65aab926.chunk.js",
-    "static/js/2.65aab926.chunk.js.map": "/thecookbooknew/static/js/2.65aab926.chunk.js.map",
+    "static/js/2.7cb51a9a.chunk.js": "/thecookbooknew/static/js/2.7cb51a9a.chunk.js",
+    "static/js/2.7cb51a9a.chunk.js.map": "/thecookbooknew/static/js/2.7cb51a9a.chunk.js.map",
     "index.html": "/thecookbooknew/index.html",
-    "static/css/main.3ec04437.chunk.css.map": "/thecookbooknew/static/css/main.3ec04437.chunk.css.map",
-    "static/js/2.65aab926.chunk.js.LICENSE.txt": "/thecookbooknew/static/js/2.65aab926.chunk.js.LICENSE.txt",
+    "static/css/main.96cb3347.chunk.css.map": "/thecookbooknew/static/css/main.96cb3347.chunk.css.map",
+    "static/js/2.7cb51a9a.chunk.js.LICENSE.txt": "/thecookbooknew/static/js/2.7cb51a9a.chunk.js.LICENSE.txt",
     "static/media/pinterest.9640bbc8.png": "/thecookbooknew/static/media/pinterest.9640bbc8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fc6112c.js",
-    "static/js/2.65aab926.chunk.js",
-    "static/css/main.3ec04437.chunk.css",
-    "static/js/main.cc99b689.chunk.js"
+    "static/js/2.7cb51a9a.chunk.js",
+    "static/css/main.96cb3347.chunk.css",
+    "static/js/main.faf802bf.chunk.js"
   ]
 }
